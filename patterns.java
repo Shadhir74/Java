@@ -128,24 +128,42 @@ public class patterns {
     // }
 
     // 0-1 triangle
-    int n=5;
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            int sum =i+j;
-            if(sum %2 ==0){
-                // even
-                System.out.print("1 ");
-            }else{
-                // odd
-                System.out.print("0 ");
-            }
+    // int n=5;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=i;j++){
+    //         int sum =i+j;
+    //         if(sum %2 ==0){
+    //             // even
+    //             System.out.print("1 ");
+    //         }else{
+    //             // odd
+    //             System.out.print("0 ");
+    //         }
             
+    //     }
+    //     System.out.println();
+    // }
+
+    // full pyramid
+        int n = 5;   // number of rows
+
+        for(int i = 1; i <= n; i++) {
+
+            // print spaces
+            for(int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // print stars
+            for(int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+            // move to next line
+            System.out.println();
         }
-        System.out.println();
     }
-
-
 }
-}
+
 
  
