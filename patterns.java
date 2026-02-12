@@ -145,23 +145,45 @@ public class patterns {
     // }
 
     // full pyramid
-        int n = 5;   // number of rows
+        // int n = 5;   // number of rows
 
-        for(int i = 1; i <= n; i++) {
+        // for(int i = 1; i <= n; i++) {
+
+        //     // print spaces
+        //     for(int j = 1; j <= n - i; j++) {
+        //         System.out.print(" ");
+        //     }
+
+        //     // print stars
+        //     for(int j = 1; j <= 2 * i - 1; j++) {
+        //         System.out.print("*");
+        //     }
+
+        //     // move to next line
+        //     System.out.println();
+        // }
+
+        // inverted full  pyramid
+        
+        
+        int n = 5;  // number of rows
+
+        for (int i = n; i >= 1; i--) {
 
             // print spaces
-            for(int j = 1; j <= n - i; j++) {
+            for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
             }
 
             // print stars
-            for(int j = 1; j <= 2 * i - 1; j++) {
+            for (int j = 1; j <= (2 * i - 1); j++) {
                 System.out.print("*");
             }
 
             // move to next line
             System.out.println();
         }
+
     }
 }
 
